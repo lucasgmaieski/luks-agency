@@ -18,9 +18,9 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <!-- Font awesome -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-         -->
+        
     <link rel="stylesheet" href="css/style.css">
     <!-- Progress Bar -->
     <script src="js/preogressbar.min.js"></script>
@@ -33,7 +33,7 @@
 <body>
     <header>
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-md fixed-top">
                 <a href="#" class="navbar-brand">
                     <img id="logo" src="img/hdcagency_logo.svg" alt="Luks Agency"> Luks Agency
                 </a>
@@ -42,18 +42,90 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <div class="navbar-nav">
-                        <a href="nav-item nav-link" id="home-menu">Home</a>
-                        <a href="nav-item nav-link" id="about-menu">A agência</a>
-                        <a href="nav-item nav-link" id="services-menu">Serviços</a>
-                        <a href="nav-item nav-link" id="team-menu">Time</a>
-                        <a href="nav-item nav-link" id="portifolio-menu">Projetos</a>
-                        <a href="nav-item nav-link" id="contact-menu">Contato</a>
+                        <a class="nav-item nav-link" id="home-menu">Home</a>
+                        <a class="nav-item nav-link" id="about-menu">A agência</a>
+                        <a class="nav-item nav-link" id="services-menu">Serviços</a>
+                        <a class="nav-item nav-link" id="team-menu">Time</a>
+                        <a class="nav-item nav-link" id="portifolio-menu">Projetos</a>
+                        <a class="nav-item nav-link" id="contact-menu">Contato</a>
                     </div>
                 </div>
             </nav>
         </div>
-        
     </header>
+
+    <main>
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#mainSlider" data-bs-slide-to="1" ></li>
+                    <li data-bs-target="#mainSlider" data-bs-slide-to="2" ></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w100" src="img/banner1.png" alt="Projetos de e-commerce">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Quer criar um e-commerce?</h2>
+                            <p>Conte conosco, temos mais de 30 lojas no portifólio.</p>
+                            <a href="#" class="main-btn">Ver Portifólio</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w100" src="img/banner2.png" alt="Engenharia de Software">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Está querendo tirar o projeto do papel?</h2>
+                            <p>Nossa equipe de Engenhariade Software está pronta para lhe atender</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img class="d-block w100" src="img/banner3.png" alt="Manutenção em Software">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Está buscando manutenção no seu software?</h2>
+                            <p>A Luks conta com engenheiros altamente qualificados para resolver seu problema.</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre a Luks Agency</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/agencia.jpg" alt="Agência Luks">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Uma agência que pensa no futuro</h3>
+                            <p>Nossos projetos são adaptados ao cliente e seu propósito.</p>
+                            <p>Após a especificação do projeto os arquitetos de softrware definirão as melhores tecnologias para o seu projeto. </p>
+                            <p>E nossos designeres trabalharão na sua interface/layout para impulsionar o negócio.</p>
+                            <p>Veja outros diferenciais</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> Utilização de Machine Learning</li>
+                                <li><i class="fas fa-check"></i> Layout responsivo para todos os dispositivos</li>
+                                <li><i class="fas fa-check"></i> Integração com diversos sistemas do mercado</li>
+                                <li><i class="fas fa-check"></i> Sistema de pagamento próprio</li>
+                                <li><i class="fas fa-check"></i> Desenvolvimento com metodologia ágil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="js/scripts.js"></script>
 </body>
 
