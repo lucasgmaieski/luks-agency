@@ -77,22 +77,26 @@ body main .container-fluid #mainSlider .carousel-caption .main-btn:hover {
 body main .container-fluid #mainSlider .carousel-indicators .active {
   background-color: #65daf9;
 }
-body main .container-fluid #about-area {
-  background-color: #f9f9f9;
-}
-body main .container-fluid #about-area .main-title {
+body main .container-fluid .main-title {
   color: #444;
   margin: 0 0 65px 0;
   font-size: 40px;
   text-align: center;
+  position: relative;
 }
-body main .container-fluid #about-area .main-title::after {
+body main .container-fluid .main-title::after {
   content: "";
   border-top: 2px solid #333;
   width: 15%;
   position: absolute;
   top: 60px;
   left: 42.5%;
+}
+body main .container-fluid #about-area {
+  background-color: #f9f9f9;
+}
+body main .container-fluid #about-area img {
+  padding-bottom: 20px;
 }
 body main .container-fluid #about-area .about-title {
   font-size: 17px;
@@ -110,6 +114,77 @@ body main .container-fluid #about-area #about-list li {
 body main .container-fluid #about-area #about-list li i {
   color: #65daf9;
   margin-right: 15px;
+}
+body main .container-fluid #services-area .services-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+body main .container-fluid #services-area .services-box i, body main .container-fluid #services-area .services-box h4 {
+  transition: 0.5s;
+}
+body main .container-fluid #services-area .services-box i {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #444;
+}
+body main .container-fluid #services-area .services-box h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+body main .container-fluid #services-area .services-box:hover > i, body main .container-fluid #services-area .services-box:hover > h4 {
+  color: #65daf9;
+}
+body main .container-fluid #data-area {
+  background-color: #333;
+}
+body main .container-fluid #data-area p {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+body main .container-fluid #data-area .circle-box div {
+  padding: 0 40px;
+}
+body main .container-fluid #data-area .progressbar-text {
+  font-weight: bold;
+  font-size: 32px;
+}
+body main .container-fluid #data-area .circleteste {
+  position: relative;
+}
+body main .container-fluid #data-area .circleteste svg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+body main .container-fluid #data-area .circleteste svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke: #65daf9;
+  stroke-width: 10;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+body main .container-fluid #data-area .circleteste svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: rgba(101, 217, 249, 0.2509803922);
+}
+body main .container-fluid #data-area .circleteste svg circle:nth-child(2) {
+  stroke: dodgerblue;
+  transition: stroke-dashoffset 0.8s;
+}
+body main .container-fluid #data-area .circleteste .number {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

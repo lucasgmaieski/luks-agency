@@ -119,26 +119,29 @@ body {
 
                 }
             }
+            .main-title {
+                color: #444;
+                margin: 0 0 65px 0;
+                font-size: 40px;
+                text-align: center;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    border-top: 2px solid #333;
+                    width: 15%;
+                    position: absolute;
+                    top: 60px;
+                    left: 42.5%;
+                }
+            }
             // sobre a empresa
             #about-area {
                 background-color: #f9f9f9;
 
-                .main-title {
-                    color: #444;
-                    margin: 0 0 65px 0;
-                    font-size: 40px;
-                    text-align: center;
-
-                    &::after {
-                        content: "";
-                        border-top: 2px solid #333;
-                        width: 15%;
-                        position: absolute;
-                        top: 60px;
-                        left: 42.5%;
-                    }
+                img {
+                    padding-bottom: 20px;
                 }
-
                 .about-title {
                     font-size: 17px;
                     color: #444;
@@ -159,8 +162,92 @@ body {
                         }
                     }
                 }
+            }
 
-                
+            #services-area {
+                .services-box {
+                    text-align: center;
+                    margin-bottom: 50px;
+
+                    i, h4 {
+                        transition: .5s;
+                    }
+                    i {
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                        color: #444;
+                    }
+                    h4 {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    &:hover > i, &:hover > h4 {
+                        color: #65daf9;
+                    }
+                }
+            }
+            // Dados
+            #data-area {
+                background-color: #333;
+                p {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 26px;
+                    margin-top: 20px;
+                }
+                .circle-box {
+                    div {
+                        padding: 0 40px;
+                    }
+                }
+
+                .progressbar-text {
+                    font-weight: bold;
+                    font-size: 32px;
+                }
+
+                .circleteste{
+                    position: relative;
+                    svg{
+                        width: 150px;
+                        height: 150px;
+                        position: relative;
+
+                        circle {
+                            width: 150px;
+                            height: 150px;
+                            fill: none;
+                            stroke:#65daf9;
+                            stroke-width: 10;
+                            transform: translate(5px, 5px);
+                            stroke-dasharray: 440;
+                            stroke-dashoffset: 440;
+
+                            &:nth-child(1) {
+                                stroke-dashoffset: 0;
+                                stroke:#65d9f940;
+                            }
+                            &:nth-child(2) {
+                                // stroke-dashoffset: 0;
+                                stroke:dodgerblue;
+                                transition: stroke-dashoffset 0.8s;
+                            }
+                        }
+                        
+                    }
+                    .number {
+                        position: absolute;
+                        top: 0;
+                        // left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+
+                    }
+                }
 
             }
         }
