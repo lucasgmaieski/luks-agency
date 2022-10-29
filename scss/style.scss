@@ -189,6 +189,15 @@ body {
             // Dados
             #data-area {
                 background-color: #333;
+                #img-parallax {
+                    background-image: url(../img/cidadeparallax.png);
+                    background-position: top center;
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                .row {
+                    padding: 60px 20px;
+                }
                 p {
                     color: #fff;
                     text-align: center;
@@ -197,7 +206,7 @@ body {
                 }
                 .circle-box {
                     div {
-                        padding: 0 40px;
+                        padding: 0 00px;
                     }
                 }
 
@@ -208,11 +217,14 @@ body {
 
                 .circleteste{
                     position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     svg{
                         width: 150px;
                         height: 150px;
                         position: relative;
-
                         circle {
                             width: 150px;
                             height: 150px;
@@ -225,11 +237,11 @@ body {
 
                             &:nth-child(1) {
                                 stroke-dashoffset: 0;
-                                stroke:#65d9f940;
+                                stroke:#AAA;
                             }
                             &:nth-child(2) {
                                 // stroke-dashoffset: 0;
-                                stroke:dodgerblue;
+                                stroke: #65daf9;
                                 transition: stroke-dashoffset 0.8s;
                             }
                         }

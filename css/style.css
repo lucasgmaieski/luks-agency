@@ -137,6 +137,15 @@ body main .container-fluid #services-area .services-box:hover > i, body main .co
 body main .container-fluid #data-area {
   background-color: #333;
 }
+body main .container-fluid #data-area #img-parallax {
+  background-image: url(../img/cidadeparallax.png);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body main .container-fluid #data-area .row {
+  padding: 60px 20px;
+}
 body main .container-fluid #data-area p {
   color: #fff;
   text-align: center;
@@ -144,7 +153,7 @@ body main .container-fluid #data-area p {
   margin-top: 20px;
 }
 body main .container-fluid #data-area .circle-box div {
-  padding: 0 40px;
+  padding: 0 0px;
 }
 body main .container-fluid #data-area .progressbar-text {
   font-weight: bold;
@@ -152,6 +161,9 @@ body main .container-fluid #data-area .progressbar-text {
 }
 body main .container-fluid #data-area .circleteste {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body main .container-fluid #data-area .circleteste svg {
   width: 150px;
@@ -170,10 +182,10 @@ body main .container-fluid #data-area .circleteste svg circle {
 }
 body main .container-fluid #data-area .circleteste svg circle:nth-child(1) {
   stroke-dashoffset: 0;
-  stroke: rgba(101, 217, 249, 0.2509803922);
+  stroke: #AAA;
 }
 body main .container-fluid #data-area .circleteste svg circle:nth-child(2) {
-  stroke: dodgerblue;
+  stroke: #65daf9;
   transition: stroke-dashoffset 0.8s;
 }
 body main .container-fluid #data-area .circleteste .number {
