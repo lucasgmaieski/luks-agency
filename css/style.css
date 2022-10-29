@@ -159,18 +159,18 @@ body main .container-fluid #data-area .progressbar-text {
   font-weight: bold;
   font-size: 32px;
 }
-body main .container-fluid #data-area .circleteste {
+body main .container-fluid #data-area .circle-content {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body main .container-fluid #data-area .circleteste svg {
+body main .container-fluid #data-area .circle-content svg {
   width: 150px;
   height: 150px;
   position: relative;
 }
-body main .container-fluid #data-area .circleteste svg circle {
+body main .container-fluid #data-area .circle-content svg circle {
   width: 150px;
   height: 150px;
   fill: none;
@@ -180,15 +180,15 @@ body main .container-fluid #data-area .circleteste svg circle {
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
 }
-body main .container-fluid #data-area .circleteste svg circle:nth-child(1) {
+body main .container-fluid #data-area .circle-content svg circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #AAA;
 }
-body main .container-fluid #data-area .circleteste svg circle:nth-child(2) {
+body main .container-fluid #data-area .circle-content svg circle:nth-child(2) {
   stroke: #65daf9;
-  transition: stroke-dashoffset 0.8s;
+  transition: stroke-dashoffset 1s;
 }
-body main .container-fluid #data-area .circleteste .number {
+body main .container-fluid #data-area .circle-content .number {
   position: absolute;
   top: 0;
   width: 100%;

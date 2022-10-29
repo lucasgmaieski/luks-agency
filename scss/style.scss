@@ -215,7 +215,7 @@ body {
                     font-size: 32px;
                 }
 
-                .circleteste{
+                .circle-content{
                     position: relative;
                     display: flex;
                     align-items: center;
@@ -242,7 +242,7 @@ body {
                             &:nth-child(2) {
                                 // stroke-dashoffset: 0;
                                 stroke: #65daf9;
-                                transition: stroke-dashoffset 0.8s;
+                                transition: stroke-dashoffset 1s;
                             }
                         }
                         
