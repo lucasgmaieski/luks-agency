@@ -41,6 +41,23 @@ body header #nav-container #navbarSupportedContent a {
 body main .container-fluid {
   padding: 0;
 }
+body main .container-fluid .main-btn {
+  background-color: #65daf9;
+  color: #fff;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+  text-decoration: none;
+}
+body main .container-fluid .main-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #65daf9;
+}
 body main .container-fluid #mainSlider .carousel-inner, body main .container-fluid #mainSlider .carousel-item {
   height: 90vh;
 }
@@ -56,23 +73,6 @@ body main .container-fluid #mainSlider .carousel-caption p {
   font-weight: 300;
   margin-bottom: 100px;
   color: #fff;
-}
-body main .container-fluid #mainSlider .carousel-caption .main-btn {
-  background-color: #65daf9;
-  color: #fff;
-  text-transform: uppercase;
-  width: 200px;
-  height: 60px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: 3px solid transparent;
-  transition: 0.5s;
-  text-decoration: none;
-}
-body main .container-fluid #mainSlider .carousel-caption .main-btn:hover {
-  color: #fff;
-  background-color: transparent;
-  border-color: #65daf9;
 }
 body main .container-fluid #mainSlider .carousel-indicators .active {
   background-color: #65daf9;
@@ -155,10 +155,6 @@ body main .container-fluid #data-area p {
 body main .container-fluid #data-area .circle-box div {
   padding: 0 0px;
 }
-body main .container-fluid #data-area .progressbar-text {
-  font-weight: bold;
-  font-size: 32px;
-}
 body main .container-fluid #data-area .circle-content {
   position: relative;
   display: flex;
@@ -197,6 +193,60 @@ body main .container-fluid #data-area .circle-content .number {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+body main .container-fluid #data-area .circle-content .number h5 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #65daf9;
+}
+body main .container-fluid .card-body {
+  text-align: center;
+}
+body main .container-fluid #apply-area {
+  height: 500px;
+}
+body main .container-fluid #apply-area .container-fluid, body main .container-fluid #apply-area .row {
+  height: 100%;
+}
+body main .container-fluid #apply-area .apply-box {
+  text-align: center;
+  padding: 70px 50px;
+}
+body main .container-fluid #apply-area #company-img {
+  background-image: url(../img/empresa.jpg);
+  background-size: cover;
+  height: 100%;
+}
+body main .container-fluid #apply-area #pattern-img {
+  background-image: url(../img/pattern.png);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body main .container-fluid #apply-area #pattern-img h4, body main .container-fluid #apply-area #pattern-img p {
+  color: #fff;
+}
+body main .container-fluid #apply-area #pattern-img h4 {
+  margin-top: 8%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+body main .container-fluid #apply-area #pattern-img p {
+  margin-bottom: 20px;
+}
+body main .container-fluid #apply-area #pattern-img #apply-btn {
+  display: block;
+  height: auto;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: #fff;
+}
+body main .container-fluid #apply-area #pattern-img #apply-btn:hover {
+  border-color: #65daf9;
+  background-color: #65daf9;
 }
 
 /*# sourceMappingURL=style.css.map */
