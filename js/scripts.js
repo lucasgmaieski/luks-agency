@@ -160,3 +160,24 @@ function fadeOut(box) {
         console.log("ele passa aqui no final do fade?")
     }, 60);
 }
+
+function mudouTamanho(){
+  const circulos = document.querySelectorAll(".circle-mobile")
+  var largura = window.screen.width;
+  console.log(largura)
+  if(largura < 375){
+    circulos.forEach(element => {
+      element.setAttribute('cx', '63');
+      element.setAttribute('cy', '63');
+      element.setAttribute('r', '63');
+    });
+  }
+  else{
+    circulos.forEach(element => {
+      element.setAttribute('cx', '70');
+      element.setAttribute('cy', '70');
+      element.setAttribute('r', '70');
+    });
+  }
+}
+mudouTamanho()
