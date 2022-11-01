@@ -248,5 +248,50 @@ body main .container-fluid #apply-area #pattern-img #apply-btn:hover {
   border-color: #65daf9;
   background-color: #65daf9;
 }
+body main .container-fluid #portifolio-area #filter-btn-box {
+  margin-bottom: 50px;
+  text-align: center;
+}
+body main .container-fluid #portifolio-area #filter-btn-box .filter-btn {
+  color: #444;
+  border: 1px solid #444;
+  background-color: transparent;
+  text-transform: none;
+  margin: 0 15px;
+  min-width: 100px;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+body main .container-fluid #portifolio-area #filter-btn-box .filter-btn.active, body main .container-fluid #portifolio-area #filter-btn-box .filter-btn:hover {
+  color: #fff;
+  background-color: #65daf9;
+  border-color: #65daf9;
+}
+body main .container-fluid #portifolio-area .project-box {
+  margin-bottom: 30px;
+}
+body main .container-fluid #portifolio-area .esconder {
+  opacity: 0;
+}
+body main .container-fluid #news-area {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+body main .container-fluid #news-area p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+body main .container-fluid #news-area #email-input {
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #65daf9;
+  display: inline;
+  box-sizing: border-box;
+  width: 40%;
+  height: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */

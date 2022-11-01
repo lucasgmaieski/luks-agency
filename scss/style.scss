@@ -320,6 +320,63 @@ body {
                     }
                 }
             }
+            // portifólio
+            #portifolio-area {
+                #filter-btn-box {
+                    margin-bottom: 50px;
+                    text-align: center;
+
+                    .filter-btn {
+                        color: #444;
+                        border: 1px solid #444;
+                        background-color: transparent;
+                        text-transform: none;
+                        margin: 0 15px;
+                        min-width: 100px;
+                        width: auto;
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 0 20px;
+
+                        &.active, &:hover {
+                            color: #fff;
+                            background-color: #65daf9;
+                            border-color: #65daf9;
+                        }
+                    }
+                }
+                .project-box {
+                    margin-bottom: 30px;
+                    // opacity: 1;
+                    // transition: opacity 2.5s ease-in-out;
+                }
+                .esconder{
+                    opacity: 0;
+                    
+                }
+
+            }
+            // Newsletter
+            #news-area{
+                text-align: center;
+                background-color: #f9f9f9;
+
+                p{
+                    font-size: 18px;
+                    margin-bottom: 40px;
+                }
+
+                #email-input{
+                    border-radius: 0;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    border: 1px solid #65daf9;
+                    display: inline;
+                    box-sizing: border-box;
+                    width: 40%;
+                    height: 40px;
+                }
+            }
 
         }
     }
