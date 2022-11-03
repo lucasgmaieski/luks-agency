@@ -72,7 +72,7 @@ body main .container-fluid #mainSlider .carousel-caption {
 body main .container-fluid #mainSlider .carousel-caption h2 {
   font-size: 50px;
   margin-bottom: 30px;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 1px #000;
   background: rgb(170, 167, 167);
   background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222, 224, 0) 100%);
 }
@@ -81,9 +81,9 @@ body main .container-fluid #mainSlider .carousel-caption p {
   font-weight: 300;
   margin-bottom: 100px;
   color: #fff;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 1px #000;
   background: rgb(170, 167, 167);
-  background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222, 224, 0) 100%);
+  background: radial-gradient(circle, rgba(73, 73, 73, 0.138) 0%, rgba(217, 222, 224, 0) 100%);
 }
 body main .container-fluid #mainSlider .carousel-indicators .active {
   background-color: #65daf9;
