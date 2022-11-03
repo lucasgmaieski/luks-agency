@@ -64,7 +64,7 @@ body main .container-fluid #mainSlider .carousel-inner, body main .container-flu
   height: 90vh;
 }
 body main .container-fluid #mainSlider .carousel-inner img, body main .container-fluid #mainSlider .carousel-item img {
-  filter: grayscale(70%);
+  filter: grayscale(60%);
 }
 body main .container-fluid #mainSlider .carousel-caption {
   top: 30%;
@@ -83,7 +83,7 @@ body main .container-fluid #mainSlider .carousel-caption p {
   color: #fff;
   text-shadow: 2px 1px #000;
   background: rgb(170, 167, 167);
-  background: radial-gradient(circle, rgba(73, 73, 73, 0.138) 0%, rgba(217, 222, 224, 0) 100%);
+  background: radial-gradient(circle, rgba(73, 73, 73, 0.125) 0%, rgba(217, 222, 224, 0) 100%);
 }
 body main .container-fluid #mainSlider .carousel-indicators .active {
   background-color: #65daf9;
@@ -489,6 +489,10 @@ body .main-title::after {
 @media (max-width: 425px) {
   body main .container-fluid .main-title {
     font-size: clamp(18px, 10vw, 30px);
+  }
+  body main .container-fluid #mainSlider .carousel-caption p {
+    background: rgb(170, 167, 167);
+    background: radial-gradient(circle, rgba(73, 73, 73, 0.598) 0%, rgba(217, 222, 224, 0) 100%);
   }
   body main .container-fluid #about-area img {
     margin-top: 25px;

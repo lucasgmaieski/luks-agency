@@ -63,7 +63,6 @@ body {
                     }
                 }
             }
-            
         }
     }
 
@@ -76,7 +75,7 @@ body {
                     &-item {
                         height: 90vh;
                         img{
-                            filter: grayscale(70%);
+                            filter: grayscale(60%);
                         }
                     }
                     &-caption {
@@ -96,7 +95,7 @@ background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222
                             color: #fff;
                             text-shadow: 2px 1px #000;
                             background: rgb(170,167,167);
-background: radial-gradient(circle, rgba(73, 73, 73, 0.138) 0%, rgba(217, 222, 224, 0) 100%);
+background: radial-gradient(circle, rgba(73, 73, 73, 0.125) 0%, rgba(217, 222, 224, 0) 100%);
                         }
                     }
                     &-indicators {
@@ -564,6 +563,14 @@ background: radial-gradient(circle, rgba(73, 73, 73, 0.138) 0%, rgba(217, 222, 2
                 
                 .main-title{
                     font-size: clamp(18px, 10vw, 30px)
+                }
+                #mainSlider{
+                    .carousel-caption{
+                        p{
+                            background: rgb(170,167,167);
+background: radial-gradient(circle, rgba(73, 73, 73, 0.598) 0%, rgba(217, 222, 224, 0) 100%);
+                        }
+                    }
                 }
                 #about-area {
                     img{
