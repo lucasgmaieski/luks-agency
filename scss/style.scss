@@ -18,23 +18,18 @@ body {
         border: 3px solid transparent;
         transition: .5s;
         text-decoration: none;
-
         &:hover {
-            
             color: #fff;
             background-color: transparent;
             border-color: #65daf9;
         }
     }
-
     .row {
         margin: 0;
     }
-
     .container {
         padding: 70px 0;
     }
-
     p,
     li {
         color: #444;
@@ -44,78 +39,77 @@ body {
     // HEADER
     header {
         background-color: #353d41;
-
         #nav-container {
             padding-top: 0;
             padding-bottom: 0;
-
+            
             .navbar {
                 background-color: #353d41;
-
+                padding: 0 15px;
                 &-brand {
-                    padding: 0;
+                    
                     color: #fff;
-
                     &:hover {
                         color: #fff;
                     }
-
                     #logo {
                         width: 75px;
                     }
                 }
             }
-
-            .navbar-expand-md {
+            .navbar-expand-lg {
                 .navbar-nav {
                     .nav-link {
                         padding: 1rem .8rem;
+                        cursor: pointer;
+                    }
+                    .active{
+                        font-weight: 600;
+                        color: #65daf9;
                     }
                 }
-
             }
-
-            #navbarSupportedContent {
-                a {
-                    color: #fff;
-                }
-            }
+            
         }
     }
 
     main {
         .container-fluid {
             padding: 0;
-            
             #mainSlider {
                 .carousel {
-
                     &-inner,
                     &-item {
                         height: 90vh;
+                        img{
+                            filter: grayscale(70%);
+                        }
                     }
                     &-caption {
                         top: 30%;
-
                         h2 {
                             font-size: 50px;
                             margin-bottom: 30px;
+                            text-shadow: 2px 2px #000;
+                            // background-color: rgba(128, 128, 128, 0.122);
+                            background: rgb(170,167,167);
+background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222, 224, 0) 100%);
                         }
-
                         p {
                             font-size: 22px;
                             font-weight: 300;
                             margin-bottom: 100px;
                             color: #fff;
+                            text-shadow: 2px 2px #000;
+                            background: rgb(170,167,167);
+background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222, 224, 0) 100%);
                         }
-
                     }
                     &-indicators {
                         .active {
                             background-color: #65daf9;
                         }
                     }
-
                 }
             }
             .main-title {
@@ -124,7 +118,6 @@ body {
                 font-size: 40px;
                 text-align: center;
                 position: relative;
-
                 &::after {
                     content: "";
                     border-top: 2px solid #333;
@@ -137,7 +130,6 @@ body {
             // sobre a empresa
             #about-area {
                 background-color: #f9f9f9;
-
                 img {
                     padding-bottom: 20px;
                 }
@@ -147,11 +139,9 @@ body {
                     text-transform: uppercase;
                     font-weight: bold;
                 }
-
                 #about-list {
                     list-style: none;
                     padding-left: 0;
-
                     li {
                         line-height: 30px;
 
@@ -162,12 +152,10 @@ body {
                     }
                 }
             }
-
             #services-area {
                 .services-box {
                     text-align: center;
                     margin-bottom: 50px;
-
                     i, h4 {
                         transition: .5s;
                     }
@@ -214,7 +202,6 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
                     svg{
                         width: 150px;
                         height: 150px;
@@ -228,7 +215,6 @@ body {
                             transform: translate(5px, 5px);
                             stroke-dasharray: 440;
                             stroke-dashoffset: 440;
-
                             &:nth-child(1) {
                                 stroke-dashoffset: 0;
                                 stroke:#AAA;
@@ -250,16 +236,13 @@ body {
                         justify-content: center;
                         align-items: center;
                         color: #fff;
-
                         h5 {
                             font-weight: bold;
                             font-size: 32px;
                             color: #65daf9;
                         }
-
                     }
                 }
-
             }
 
             // Time
@@ -270,8 +253,6 @@ body {
             // Trabalhe conosco
             #apply-area{
                 height: 500px;
-                
-
                 .container-fluid, .row {
                     height: 100%;
                 }
@@ -284,7 +265,6 @@ body {
                     background-size: cover;
                     height: 100%;
                 }
-
                 #pattern-img {
                     background-image: url(../img/pattern.png);
                     background-position: top center;
@@ -298,11 +278,9 @@ body {
                         margin-bottom: 20px;
                         text-transform: uppercase;
                     }
-
                     p{
                         margin-bottom: 20px;
                     }
-
                     #apply-btn {
                         display: block;
                         height: auto;
@@ -312,7 +290,6 @@ body {
                         margin-top: 30px;
                         background-color: transparent;
                         border-color: #fff;
-
                         &:hover {
                             border-color: #65daf9;
                             background-color: #65daf9;
@@ -325,7 +302,6 @@ body {
                 #filter-btn-box {
                     margin-bottom: 50px;
                     text-align: center;
-
                     .filter-btn {
                         color: #444;
                         border: 1px solid #444;
@@ -337,7 +313,6 @@ body {
                         height: 40px;
                         line-height: 40px;
                         padding: 0 20px;
-
                         &.active, &:hover {
                             color: #fff;
                             background-color: #65daf9;
@@ -348,19 +323,15 @@ body {
                 .project-box {
                     margin-bottom: 30px;
                 }
-                
-
             }
             // Newsletter
             #news-area{
                 text-align: center;
                 background-color: #f9f9f9;
-
                 p{
                     font-size: 18px;
                     margin-bottom: 40px;
                 }
-
                 #email-input{
                     border-radius: 0;
                     border-top-left-radius: 20px;
@@ -370,6 +341,9 @@ body {
                     box-sizing: border-box;
                     width: 40%;
                     height: 40px;
+                    &:focus{
+                        box-shadow: none;
+                    }
                 }
                 #news-btn{
                     border-top-right-radius: 20px;
@@ -383,7 +357,6 @@ body {
                     margin-left: -130px;
                     position: absolute;
                     transition: .5s;
-
                     &:hover{
                         background-color: #fff;
                         color: #65daf9;
@@ -394,13 +367,11 @@ body {
             #call-area{
                 background-color: #65daf9;
                 text-transform: uppercase;
-
                 .container {
                     padding: 40px 100px;
                     .row{
                         display: block;
                         text-align: center;
-    
                         p{
                             color: #fff;
                             font-weight: bold;
@@ -413,7 +384,6 @@ body {
                             height: 60px;
                             line-height: 60px;
                         }
-    
                         #call-btn{
                             background-color: #fff;
                             color: #65daf9;
@@ -425,19 +395,16 @@ body {
                         }
                     }
                 }
-
             }
         }
     }
     // footer
     #contact-area {
         text-align: center;
-
         .contact-box{
             padding-bottom: 50px;
             margin-bottom: 50px;
             border-bottom: 1px solid #65daf9;
-
             i{
                 color: #444;
                 border: 1px solid #444;
@@ -448,10 +415,8 @@ body {
                 font-size: 24px;
                 margin-bottom: 20px;
             }
-
             p{
                 font-size: 16px;
-
                 .contact-title{
                     font-weight: bold;
                     color: #3ec1d5;
@@ -468,7 +433,7 @@ body {
                 margin-bottom: 15px;
                 border-radius: 0;
             }
-            main-btn {
+            .main-btn {
                 width: 120px;
                 height: 50px;
                 &:hover{
@@ -480,18 +445,14 @@ body {
     // copy
     #copy-area{
         background-color: #f1f1f1;
-
         .container{
             padding: 10px 0;
             text-align: center;
-
             p{
                 margin-bottom: 0;
-
                 a{
                     font-weight: bold;
                     color: #444;
-
                     &:hover{
                         text-decoration: none;
                         color: #3ec1d5;
@@ -500,14 +461,26 @@ body {
             }
         }
     }
-
+    .main-title {
+        color: #444;
+        margin: 0 0 65px 0;
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        &::after {
+            content: "";
+            border-top: 2px solid #333;
+            width: 15%;
+            position: absolute;
+            top: 60px;
+            left: 42.5%;
+        }
+    }
 }
-
 // responsive
 @media(max-width: 768px) {
     body {
     // geral
-    
         main {
             .container {
                 padding: 20px 0;
@@ -518,7 +491,6 @@ body {
                     .carousel-inner, .carousel-item{
                         height: 80vh;
                     }
-
                     .carousel-caption{
                         left: 10%;
                         right: 10%;
@@ -539,8 +511,7 @@ body {
                 #data-area{
                     p{
                         font-size: 16px;
-                    }
-                    
+                    }   
                 }
                 #team-area{
                     .card-body {
@@ -561,7 +532,6 @@ body {
                         padding: 50px 25px;
                     }
                 }
-
                 #news-area {
                     p{
                         width: 80%;
@@ -572,12 +542,17 @@ body {
                         width: 70%;
                     }
                 }
+                #portifolio-area{
+                    #filter-btn-box{
+                        .filter-btn{
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
                 #call-area {
                     margin-top: 30px;
-
                     .container{
                         padding: 30px;
-
                         p, #call-btn{
                             font-size: 16px;
                         }
@@ -596,13 +571,11 @@ body {
                 .main-title{
                     font-size: clamp(18px, 10vw, 30px)
                 }
-
                 #about-area {
                     img{
                         margin-top: 25px;
                     }
                 }
-
                 #data-area{
                     .row{
                         padding-left: 0;
@@ -614,7 +587,6 @@ body {
                                 margin-top: 10px;
                             }
                         }
-    
                         .circle-content{
                             .number{
                                 h5{
@@ -622,11 +594,50 @@ body {
                                 }
                             }
                         }
+                    } 
+                }
+                #news-area{
+                    .main-title{
+                        font-size: 24px;
                     }
-                    
+                    p{
+                        font-size:16px;
+                    }
+                    #email-input{
+                        width: 75%;
+                    }
+                    #news-btn{
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin-left: -78px;
+                    }
+
+                }
+                #call-area{
+                    .container {
+                        .row {
+                            p, #call-btn{
+                                font-size: 14px;
+                                letter-spacing: 0;
+                                margin: 0;
+                                width: 60%;
+                                // padding-bottom: 15px;
+                                line-height: 10px;
+                                height: auto;
+                            }
+                        }
+                    }
                 }
             }
         }
-        
+        #contact-area{
+            .main-title{
+                font-size: 24px;
+            }
+            .contact-box{
+                border: none;
+                margin: 0;
+            }
+        }
     }
 }

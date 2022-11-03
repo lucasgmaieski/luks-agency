@@ -38,9 +38,9 @@ body header #nav-container {
 }
 body header #nav-container .navbar {
   background-color: #353d41;
+  padding: 0 15px;
 }
 body header #nav-container .navbar-brand {
-  padding: 0;
   color: #fff;
 }
 body header #nav-container .navbar-brand:hover {
@@ -49,11 +49,13 @@ body header #nav-container .navbar-brand:hover {
 body header #nav-container .navbar-brand #logo {
   width: 75px;
 }
-body header #nav-container .navbar-expand-md .navbar-nav .nav-link {
+body header #nav-container .navbar-expand-lg .navbar-nav .nav-link {
   padding: 1rem 0.8rem;
+  cursor: pointer;
 }
-body header #nav-container #navbarSupportedContent a {
-  color: #fff;
+body header #nav-container .navbar-expand-lg .navbar-nav .active {
+  font-weight: 600;
+  color: #65daf9;
 }
 body main .container-fluid {
   padding: 0;
@@ -61,18 +63,27 @@ body main .container-fluid {
 body main .container-fluid #mainSlider .carousel-inner, body main .container-fluid #mainSlider .carousel-item {
   height: 90vh;
 }
+body main .container-fluid #mainSlider .carousel-inner img, body main .container-fluid #mainSlider .carousel-item img {
+  filter: grayscale(70%);
+}
 body main .container-fluid #mainSlider .carousel-caption {
   top: 30%;
 }
 body main .container-fluid #mainSlider .carousel-caption h2 {
   font-size: 50px;
   margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
+  background: rgb(170, 167, 167);
+  background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222, 224, 0) 100%);
 }
 body main .container-fluid #mainSlider .carousel-caption p {
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 100px;
   color: #fff;
+  text-shadow: 2px 2px #000;
+  background: rgb(170, 167, 167);
+  background: radial-gradient(circle, rgba(148, 148, 148, 0.131) 0%, rgba(217, 222, 224, 0) 100%);
 }
 body main .container-fluid #mainSlider .carousel-indicators .active {
   background-color: #65daf9;
@@ -290,6 +301,9 @@ body main .container-fluid #news-area #email-input {
   width: 40%;
   height: 40px;
 }
+body main .container-fluid #news-area #email-input:focus {
+  box-shadow: none;
+}
 body main .container-fluid #news-area #news-btn {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -371,11 +385,11 @@ body #contact-area #contact-form input[type=text], body #contact-area #contact-f
   margin-bottom: 15px;
   border-radius: 0;
 }
-body #contact-area #contact-form main-btn {
+body #contact-area #contact-form .main-btn {
   width: 120px;
   height: 50px;
 }
-body #contact-area #contact-form main-btn:hover {
+body #contact-area #contact-form .main-btn:hover {
   color: #3ec1d5;
 }
 body #copy-area {
@@ -395,6 +409,21 @@ body #copy-area .container p a {
 body #copy-area .container p a:hover {
   text-decoration: none;
   color: #3ec1d5;
+}
+body .main-title {
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+body .main-title::after {
+  content: "";
+  border-top: 2px solid #333;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
 }
 
 @media (max-width: 768px) {
@@ -444,6 +473,9 @@ body #copy-area .container p a:hover {
   body main .container-fluid #news-area #email-input {
     width: 70%;
   }
+  body main .container-fluid #portifolio-area #filter-btn-box .filter-btn {
+    margin-bottom: 20px;
+  }
   body main .container-fluid #call-area {
     margin-top: 30px;
   }
@@ -474,6 +506,35 @@ body #copy-area .container p a:hover {
   }
   body main .container-fluid #data-area .row .circle-content .number h5 {
     font-size: 25px;
+  }
+  body main .container-fluid #news-area .main-title {
+    font-size: 24px;
+  }
+  body main .container-fluid #news-area p {
+    font-size: 16px;
+  }
+  body main .container-fluid #news-area #email-input {
+    width: 75%;
+  }
+  body main .container-fluid #news-area #news-btn {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: -78px;
+  }
+  body main .container-fluid #call-area .container .row p, body main .container-fluid #call-area .container .row #call-btn {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0;
+    width: 60%;
+    line-height: 10px;
+    height: auto;
+  }
+  body #contact-area .main-title {
+    font-size: 24px;
+  }
+  body #contact-area .contact-box {
+    border: none;
+    margin: 0;
   }
 }
 

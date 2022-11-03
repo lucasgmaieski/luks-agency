@@ -75,15 +75,12 @@ function animeScroll() {
 }
 //Se ja animou um vez para de ficar ouvindo esse scrooll
 if (jaAnimou === 0) {
-  window.addEventListener(
-    "scroll",
-    debounce(function () {
+  window.addEventListener("scroll", debounce(function () {
       if (jaAnimou === 0) animeScroll();
       else return;
       console.log("entra aqui mil vezes");
       console.log(jaAnimou);
-    }, 200)
-  );
+  }, 200));
 }
 
 // filtro do portifólio
